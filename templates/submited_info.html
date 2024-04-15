@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Info</title>
+</head>
+<body>
+    <h1>Submitted Information</h1>
+{{session.forminfo}}
+    <div>
+        <h1>Name:{{session.forminfo.name}}</h1>
+        <h3>Dojo Location: {{session.forminfo.Location}}</h3>
+        <h3>Favorite Language: {{session.forminfo.Language}}</h3>
+        <h3>Comment: {{session.forminfo.comment}}</h3>
+    </div>
+
+    <form>
+        <input type="button" value="Go back!" onclick="history.back()">
+    </form>
+</body>
+</html>
